@@ -1,0 +1,91 @@
+/* reset */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+ul{
+    list-style: none;
+}
+
+/* general */
+:root{
+    --blue: #1e2d3b;
+    --lightblue: #2e3a46; 
+    --text: #808080;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    background-color: var(--blue);
+}
+
+html{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+
+
+/* header */
+header{
+    background-color: var(--lightblue);
+}
+
+.img_wrapper{
+    width: 80px;
+}
+
+.img_wrapper img{
+    width: 100%;
+    object-fit: fill;
+}
+
+
+
+
+/* main */
+.container{
+    width: calc((200px + 2rem) * 5);
+    height: 100%;
+
+    margin: 5rem auto 0;
+
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card_container{
+    width: 200px;
+    height: 380px;
+
+    padding: 1rem;
+    margin: 1rem;
+
+    background-color: var(--lightblue);
+
+    color: var(--text);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.card_container .img_wrapper{
+    width: 160px;
+    height: 160px;
+}
+
+.card_container .img_wrapper img{
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
